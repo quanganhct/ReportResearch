@@ -1,4 +1,4 @@
-\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{i}
 \thispagestyle {empty}
 \contentsline {section}{\numberline {1}INTRODUCTION}{1}
 \contentsline {paragraph}{}{1}
@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {4}MACHINE'S IMPLEMENTATION}{2}
 \contentsline {paragraph}{}{2}
 \contentsline {paragraph}{}{2}
-\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{2}
 \contentsline {paragraph}{}{3}
 \contentsline {paragraph}{}{3}
 \contentsline {section}{\numberline {5}CONCLUSION}{3}

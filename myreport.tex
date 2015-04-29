@@ -96,8 +96,9 @@
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
-\begin{document}\input{project/cover.tex}
-\newpage
+\begin{document}
+%\input{project/cover.tex}
+%\newpage
 
 %\input{project/title.tex}
 %\newpage
@@ -109,9 +110,15 @@
 % includes the acknowledgements page
 %\input{project/acknowledgements.tex} 
 %\newpage
+\title{Curvature Estimation Algorithm's Implementation}
+\author{NGUYEN Quang Anh, REBMANN Guillaume}
 
+\maketitle
+
+\begin{abstract}
 \input{project/abstract.tex} % adds the Research Methodology page
-\newpage
+\end{abstract}
+%\newpage
 
 %TABLE OF CONTENTS AND LIST OF FIGURES ARE AUTOMATICALLY ADDED BY FOLLOWING COMMANDS
 %ADD FIGURE OF TABLES IF YOU NEED TO, CHECK DOCUMENTATION
@@ -120,20 +127,20 @@
 
 %To reset the Header & Footer for TOC and LOF
 \pagestyle{empty}
-\addtocontents{toc}{\protect\thispagestyle{empty}}
+%\addtocontents{toc}{\protect\thispagestyle{empty}}
 %\doublespacing
-\tableofcontents % adds Index Page
-\singlespacing
+%\tableofcontents % adds Index Page
+%\singlespacing
 
-\newpage
-\addtocontents{lof}{\protect\thispagestyle{empty}}
+%\newpage
+%\addtocontents{lof}{\protect\thispagestyle{empty}}
 %\listoffigures % adds List of Figures
-\cleardoublepage
+%\cleardoublepage
 
 %And reset back the settings we choose for Header and Footer
 \pagestyle{fancy}
 
-\newpage
+%\newpage
 \pagenumbering{arabic} %reset numbering to normal for the main content
 
 \input{project/introduction.tex} % adds the introduction page
@@ -148,6 +155,9 @@
 
 \input{project/conclusion.tex}
 
+
+\bibliography{mybib}
+\bibliographystyle{plain}
 
 %\input{project/testing.tex}
 %\input{project/planning.tex}
