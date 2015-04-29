@@ -1,0 +1,25 @@
+\section{MACHINE'S IMPLEMENTATION}
+
+For examining an array, we need to run through all of the members of the array. So I introduced a variable \textit{indice} which hold the current position of the last array's element that was visited.
+
+$$ indice \in 1..size $$
+
+\paragraph{}
+The machine will stop when it find an element that doesn't satisfy the condition in section 3. That means all the member before the \textit{indice} must satisfy the condition.
+
+$$ \forall i \cdot i \in 1..size \land i < indice \implies array(i) \leq array(i+1) $$
+
+\paragraph{}
+At first \textit{indice} start with value of 1. Then, as long as it satisfies the condition below, we increase \textit{indice} by 1
+$$ indice < size \land array(indice) \leq array(indice+1) $$
+
+\paragraph{}
+Now, our array is sorted in ascending order if $ indice \geq size $, and it isn't if $ indice < size \land array(indice) > array(indice+1) $
+
+\paragraph{}
+To test that our machine will not stop half way, we need to justify that the expression below is true
+$$ (indice \geq size) \lor (indice < size \land array(indice) > array(indice+1)) $$
+$$ \lor (indice < size \land array(indice) \leq array(indice+1)) $$ 
+
+\paragraph{}
+To test that our machine will not fall into an infinite loop, we need to point out a value that would decrease each time we go through a loop, and is greater than zero. I choose this value : $size - indice$. This value is indeed decreased each time we go through the loop, as \textit{indice} would increase and \textit{size} is fixed, and because of the definition of \textit{indice}, $size - indice \geq 0$
