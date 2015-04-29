@@ -1,0 +1,34 @@
+\section{Osculating Circles Estimator}
+
+Osculating Circles Estimator is an algorithm that calculate the curvature of a contour, by pointing out the tangent circle at each point of the contour. 
+
+\paragraph{}
+For implementing this part, we used the definition of digital straight segment and digital straight line. 
+
+\subsection{Digital Straight Line}
+Digital Straight Line (DSL) is defined by 4 values : $D(a, b, \mu, \omega)$, with $a, b, c, d \in \mathbb{Z}$ and $gcd(a, b) = 1$. $a/b$ is called a sloped of $D$, $\mu$ is an intercept and $\omega$ is the thickness of $D$.
+
+\paragraph{}
+Every points that belong to $D(a, b, \mu, \omega)$ must satisfy :
+$$
+\mu \leq ax-by < \mu + \omega
+$$
+
+In DGtal, there are 2 types of DSL :
+\begin{itemize}
+\item Naive Digital Straight Line
+\item Standard Digital Straight Line
+\end{itemize}
+
+These type of DSL is made by specifying the value \textit{thickness}. 
+
+\begin{itemize}
+\item Naive DSL : $\omega = max(|a|, |b|)$
+\item Standard DSL : $\omega = |a| + |b|$
+\end{itemize}
+
+\subsection{Digital Straight Segment}
+Digital Straight Segment (DSS) is the set of points that belong to a digital straight line. Just like DSL, in DGtal there are also two specifics DSS : Naive DSS and Standard DSS.
+
+\subsection{Implementation}
+In this project, we used the standard DSL and DSS to implement this algorithm. 
