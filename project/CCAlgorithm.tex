@@ -43,7 +43,7 @@ The idea of CC algorithm is that at each point of the contour, called K point, w
 So the most important work in this algorithm, is to be able to locate the two points L and R with each point K that we iterate through. We need two DSS, one for searching the point R, another for searching the point L. In class \textbf{StandardDSS4Computer} there are two methods that could help with the searching : \textit{extendFront} and \textit{extendBack}. These two method will return true if they can still add point to the DSS, and false if not. So now the problem of searching for the two points L and R is solved. But we still have one more problem.
 
 \paragraph{}
-For calculating the curvature of point K, we have to have the two points L and R corresponded to the point K. So now what will happen if we are at the begin or the end of our vector ? Only one point, either L or R, could be found.
+For calculating the curvature of point K, we have to have the two points L and R corresponded to the point K. So now what will happen if we are at the begin or the end of our vector ? Only one point, either L or R, could be found. The vector is the set of all the points of the contour, that means that the begining and the end of this vector, is at the same point of the contour. So the set of points obtained by \textit{StandardDSS4Computer::extendFront} at the begin of the vector, and the set of points obtained by \textit{StandardDSS4Computer::extendBack} at the end of the vector will be added to end and the head of the vector. Now, we can easily iterate through the set of points of the contour.
 
 
 
