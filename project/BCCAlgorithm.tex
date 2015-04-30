@@ -49,5 +49,14 @@ Where
 
 $ h $ Represent the grid size. When we compute the algorithm, we increase the grid size on every step.
 
-\subsection{Implementation}
+\subsection{Implementation}\FloatBarrier
 To implement this algorithm, we used the libraryr DGtal to get access to differents objects and functions. We tried to implement the same algorithm to be computed on the GPU (Parallel) but we had some difficulties to work with the source code of the DGtal library that is fully written in a generic style. We tried to use CUDA and openCL but we didn't get the algorithm working in parallel. In fact we could put some calculs in parallel, but it's not really usefull to put only one addition or multiplication in parallel. That's why we focused on the full algorithm in parallel.
+
+\begin{figure}[h]
+    \centering
+    \subfloat[Source File]{{\includegraphics[width=5cm]{project/images/bcc_source.png} }}
+    \qquad
+    \subfloat[Result after applying the algorithm]{{\includegraphics[width=5cm]{project/images/bcc_result.png} }}
+    \caption{Source and Result}
+    \label{fig:example}
+\end{figure}
