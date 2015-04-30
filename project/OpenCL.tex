@@ -1,0 +1,12 @@
+\section{Parallel Programing}
+
+We have tried to use OpenCL for paralleling algorithm on GPU. Although it's still not perfect, but some archievements have been made. The target of parelling is CC algorithm. 
+
+\paragraph{}
+There are some main points about OpenCL that we need to point out. First is a \textbf{kernel}. \textbf{Kernel} is a function that will be run on the GPU, by many threads at the same time. Each thread on the GPU will handle a part of data which is sent to GPU by the host. Second, the kernel compilation happens at run time, means that after the \textbf{make} command for compiling the program, \textbf{kernel} still wasn't compiled yet. At the time the command to run the program is executed, that is when the \textbf{kernel} would be compiled. So it's a convenient way to re-write the \textbf{kernel} without re-compiling the whole program each time. 
+
+\paragraph{}
+Because OpenCL don't support class call in the \textbf{kernel}, so the part that searching for the points L and R can't be paralleled. So this is the way we parallel algorithm on GPU. First, the program will run normally, find all the points L and R corresponding to the point K, and stock all of these datas in a vector. These vector will be passed to the \textbf{kernel} to perform paralleling the calculation of curvature on GPU. 
+
+\paragraph{}
+This processing was successful for the small size of vector. When the vector's size grows above 91, the problem appears. It seemed that on our machine, only 91 threads could be run on GPU. This is the problem we still didn't figure it out yet, whether the problem lies in the GPU's ability, or in the program itself. 
