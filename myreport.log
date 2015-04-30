@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.26)  30 APR 2015 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.26)  30 APR 2015 17:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -794,16 +794,30 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
- [2])
-(./project/BCCAlgorithm.tex [3] [4]
-<project/images/bcc_source.png, id=28, 185.69376pt x 85.31876pt>
+
+<project/images/dsl_source.png, id=13, 100.375pt x 100.375pt>
+File: project/images/dsl_source.png Graphic file (type png)
+
+<use project/images/dsl_source.png>
+Package pdftex.def Info: project/images/dsl_source.png used on input line 37.
+(pdftex.def)             Requested size: 142.26378pt x 142.28535pt.
+
+<project/images/dsl_result.jpg, id=14, 401.5pt x 69.25874pt>
+File: project/images/dsl_result.jpg Graphic file (type jpg)
+
+<use project/images/dsl_result.jpg>
+Package pdftex.def Info: project/images/dsl_result.jpg used on input line 39.
+(pdftex.def)             Requested size: 142.26378pt x 24.54105pt.
+ [2 <./project/images/dsl_source.png> <./project/images/dsl_result.jpg>]) (./pr
+oject/BCCAlgorithm.tex [3] [4]
+<project/images/bcc_source.png, id=31, 185.69376pt x 85.31876pt>
 File: project/images/bcc_source.png Graphic file (type png)
 
 <use project/images/bcc_source.png>
 Package pdftex.def Info: project/images/bcc_source.png used on input line 57.
 (pdftex.def)             Requested size: 142.26378pt x 65.36626pt.
 
-<project/images/bcc_result.png, id=29, 884.30376pt x 98.3675pt>
+<project/images/bcc_result.png, id=32, 884.30376pt x 98.3675pt>
 File: project/images/bcc_result.png Graphic file (type png)
 
 <use project/images/bcc_result.png>
@@ -822,35 +836,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--155
 
 (./project/OpenCL.tex [5 <./project/images/bcc_source.png (PNG copy)> <./projec
 t/images/bcc_result.png>]) (./project/Difficulties.tex)
-(./project/conclusion.tex) [6] (./myreport.bbl) [7] (./myreport.aux) ) 
+(./project/conclusion.tex) [6] (./myreport.bbl) [7] (./myreport.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8037 strings out of 493117
- 117923 string characters out of 6135433
+ 8048 strings out of 493117
+ 118225 string characters out of 6135433
  207279 words of memory out of 5000000
- 11279 multiletter control sequences out of 15000+600000
+ 11287 multiletter control sequences out of 15000+600000
  16562 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,14n,47p,1011b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/loc
-al/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/urw/helvetic/uhvb8a.pfb>
-Output written on myreport.pdf (7 pages, 240700 bytes).
+ 44i,14n,47p,1011b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on myreport.pdf (7 pages, 816509 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

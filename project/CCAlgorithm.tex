@@ -30,9 +30,16 @@ These type of DSL is made by specifying the value \textit{thickness}.
 \subsection{Digital Straight Segment}
 Digital Straight Segment (DSS) is the set of points that belong to a digital straight line. Just like DSL, in DGtal there are also two specifics DSS : Naive DSS and Standard DSS.
 
-\subsection{Implementation}
+\subsection{Implementation}\FloatBarrier
 In this project, we used the standard DSL and DSS to implement this algorithm. A class \textbf{ArithmeticalDSSComputer} will be used to analyze the points of the contour.
-
+\begin{figure}[h]
+    \centering
+    \subfloat[Source File]{{\includegraphics[width=5cm]{project/images/dsl_source.png} }}
+    \qquad
+    \subfloat[Result after applying the algorithm]{{\includegraphics[width=5cm]{project/images/dsl_result.jpg} }}
+    \caption{Source and Result}
+    \label{fig:example}
+\end{figure}
 \paragraph{}
 \textbf{StandardDSS4Computer} is the sub class of \textbf{ArithmeticalDSSComputer}, which is specialized which type of DSS that use to make the calculation. After extract all the points of the contour into a vector, we need to adjust this vector to be able to iterate through all the points of the contour. 
 
