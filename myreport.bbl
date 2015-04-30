@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{kerautret2008comparison}
+Bertrand Kerautret, J-O Lachaud, and Beno{\^\i}t Naegel.
+\newblock Comparison of discrete curvature estimators and application to corner
+  detection.
+\newblock In {\em Advances in Visual Computing}, pages 710--719. Springer,
+  2008.
+
+\bibitem{malgouyres2008binomial}
+R{\'e}my Malgouyres, Florent Brunet, and S{\'e}bastien Fourey.
+\newblock Binomial convolutions and derivatives estimation from noisy
+  discretizations.
+\newblock In {\em Discrete Geometry for Computer Imagery}, pages 370--379.
+  Springer, 2008.
+
+\end{thebibliography}
