@@ -30,6 +30,7 @@
 \usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{datetime}
 
 \usepackage{multirow}
 \usepackage{setspace}
@@ -110,9 +111,10 @@
 % includes the acknowledgements page
 %\input{project/acknowledgements.tex} 
 %\newpage
+\newdate{date}{27}{04}{2015}
 \title{Curvature Estimation Algorithm's Implementation}
 \author{NGUYEN Quang Anh, REBMANN Guillaume}
-
+\date{\displaydate{date}}
 \maketitle
 
 \begin{abstract}
